@@ -1,0 +1,45 @@
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chatgpt
+    username: root
+    password: 1234
+
+  thymeleaf:
+    cache: false
+
+  mail:
+    default-encoding: UTF-8
+    host: smtp.163.com
+    port: 587
+    username: XXXXX
+    password: XXXXX
+    from: XXXXX
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
+
+baseReqParam:
+  url: "https://api.openai.com/v1/chat/completions"
+  authorization: "XXXXX"
+  model: "gpt-3.5-turbo"
+  max_tokens: 1000
+  temperature: 0.7
+  top_p: 1
+  n: 1
+  stream: false

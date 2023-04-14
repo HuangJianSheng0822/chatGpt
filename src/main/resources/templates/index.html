@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>chat</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="rightSide">
+      <div class="header">
+        <div class="imgText">
+          <div class="userimg">
+            <img src="img/openai.jpg" class="cover">
+          </div>
+          <h4>ChatGpt<br><span>在线</span></h4>
+        </div>
+        <ul class="nav_icons">
+          <li><ion-icon name="search-outline"></ion-icon></li>
+          <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+        </ul>
+      </div>
+
+
+      <div class="chatBox" id="chat"></div>
+      
+      <div class="chatBox_input">
+        <ion-icon name="happy-outline"></ion-icon>
+        <ion-icon name="attach-outline"></ion-icon>
+        <input type="text" placeholder="输入聊天内容" id="content" name="content">
+        <ion-icon name="paper-plane-outline" id="send"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+<script type="text/javascript" src="js/index.js"></script>
